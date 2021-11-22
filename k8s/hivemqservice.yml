@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hivemq-service
+  labels:
+    name: hivemq
+spec:
+  ports:
+    - port: 1883
+      name: hivemq-port
+      protocol: TCP
+  selector:
+    app: hivemq
+    id: "0"
+  type: LoadBalancer

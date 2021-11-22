@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: auto1
+  labels:
+    app: autoramp-1
+spec:
+  ports:
+    - port: 8080
+      name: autoramp-port
+      protocol: TCP
+  selector:
+    app: autoramp-1
