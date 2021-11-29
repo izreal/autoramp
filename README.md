@@ -13,6 +13,6 @@ This includes the following:
 
 ### Mac Localhost Development
  - [Local services in Kubernetes](k8s.md)
- - [Local development with Docker for Mac and Kubernetes](https://github.com/jnewland/local-dev-with-docker-for-mac-kubernetes.git)
+ - [Local development for Mac with Docker and Kubernetes](https://itnext.io/goodbye-docker-desktop-hello-minikube-3649f2a1c469)
 
 
