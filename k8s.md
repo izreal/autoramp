@@ -10,10 +10,12 @@ kubectl create -f k8s/kafkaservice.yml
 kubectl create -f k8s/kafkabroker.yml
 kubectl create -f k8s/autorampservice.yml
 kubectl create -f k8s/autoramp.yml
+kubectl create -f k8s/nginx-ingress.yml
 ```
 
 Bring everything down (in reverse order)
 ```
+kubectl delete -f k8s/nginx-ingress.yml
 kubectl delete -f k8s/autoramp.yml
 kubectl delete -f k8s/autorampservice.yml
 kubectl delete -f k8s/kafkabroker.yml

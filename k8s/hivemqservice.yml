@@ -5,6 +5,7 @@ metadata:
   labels:
     name: hivemq
 spec:
+  type: NodePort
   ports:
     - port: 1883
       name: hivemq-port
@@ -12,4 +13,3 @@ spec:
   selector:
     app: hivemq
     id: "0"
-  type: LoadBalancer

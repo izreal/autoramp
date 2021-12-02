@@ -5,6 +5,7 @@ metadata:
   labels:
     app: autoramp-1
 spec:
+  type: NodePort
   ports:
     - port: 8080
       name: autoramp-port
